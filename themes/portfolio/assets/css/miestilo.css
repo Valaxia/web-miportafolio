@@ -1,0 +1,698 @@
+/* -------------------------------------------------------------- 
+
+reset.css
+* Resets default browser CSS.
+
+-------------------------------------------------------------- */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+font-weight: inherit;
+font-style: inherit;
+font-size: 100%;
+font-family: inherit;
+/* vertical-align: baseline; */
+}
+
+body { 
+line-height: 1.5; 
+}
+
+caption, th, td { 
+text-align: left; 
+font-weight: normal; 
+}
+table, td, th { 
+vertical-align: middle; 
+}
+
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before, blockquote:after, q:before, q:after { 
+content: ""; 
+}
+blockquote, q { 
+quotes: "" ""; 
+}
+
+/* Remove annoying border on linked images. */
+a img { 
+border: none;
+}
+
+
+@font-face {
+font-family:"Gilroy";
+src: url("../fonts/gilroy-extrabold.woff2") format("woff2"),
+url("../fonts/gilroy-extrabold.woff") format("woff"),
+url("../fonts/gilroy-extrabold.otf") format("opentype");
+font-style:normal;
+font-weight:900;
+}
+
+@font-face {
+font-family:"Gilroy";
+src: url("../fonts/gilroy-light.woff2") format("woff2"),
+url("../fonts/gilroy-light.woff") format("woff"),
+url("../fonts/gilroy-light.otf") format("opentype");
+font-style:normal;
+font-weight:300;
+}
+
+::selection {
+background: #05c0c9;
+
+}
+
+body.alt .row {
+position: relative;
+}
+
+
+main{
+	margin-bottom: 45px;
+}
+
+
+.row {
+margin-right: 0;
+margin-left: 0;
+}
+
+.main-header{
+background-color: black;
+padding-bottom: 60px;
+float: right;
+
+}
+
+.main-header-alt {
+background-color: transparent;
+position: fixed;
+z-index: 1000;
+}
+
+.texto-svg {
+width: 70%;
+}
+
+
+.sidenav__info{
+text-align: right;
+text-decoration: none;
+list-style: none;
+font-family: 'Montserrat';
+font-weight: 400;
+color: black; 
+font-size: 15px;
+padding-top: 15px;
+padding-bottom: 50px;
+line-height: 18px;
+}
+
+.sidenav__infolist{
+font-size: 13px;
+padding: 5px 0;
+}
+
+.sidenav__infolist:hover{
+background-color: #05c0c9;
+padding-right: 10px;
+box-sizing: border-box;
+}
+
+
+.mi-nombre{
+font-weight: 800;
+font-family: 'Montserrat';
+font-size: 17px;
+padding-bottom: 10px;
+text-align: right;
+}
+
+.sidenav{
+position: fixed;
+z-index: 1;
+padding-right: 60px;
+background-color: #fff;
+height: 0;
+overflow: hidden;
+}
+
+.sidenav.show{
+height: auto;
+position: absolute;
+padding-bottom: 50px;
+}
+
+
+.sidenav__links{
+text-align: right;
+text-decoration: none;
+list-style: none;
+font-family: 'Montserrat';
+font-weight: 500;
+color: black;
+text-transform: uppercase;
+line-height: 25px;
+font-size: 12px;
+}
+
+.sidenav__links li:first-child a{
+font-size: 14px;
+font-weight: 800;
+}
+
+a:focus{
+text-decoration: none;	
+}
+
+
+.sidenav__list, a:hover{
+background-color: #05c0c9;
+box-sizing: border-box;
+}
+
+.sidenav__hamb{
+z-index: 90000;
+position: relative;
+}
+
+.sidenav__hamb-img{
+width: 60px;
+float: right;
+padding: 20px 5px 20px 0;
+}
+
+ul.sidenav__links{
+max-height: 500px;
+}
+
+.sidenav__info a,
+.sidenav__links a{
+color: black;
+}
+
+
+.current-menu-item, 
+.menu-item-33, 
+.menu-item-32, 
+#menu-menu-interior li{
+font-weight: 800; 
+}
+
+.current-menu-item{
+font-weight: 800; 
+}
+
+
+/* #contact, #about{
+font-weight: 800;
+} */
+
+.last-proyect__img{
+width: 100%;
+
+}
+
+.seccion-last-proyect, 
+.seccion-proyects,
+.masonry{
+float: right;
+padding: 0;
+}
+
+a:hover{
+color: #fff;
+text-decoration: none;
+clear: left;
+}
+
+
+.text-descript{
+font-family: 'Montserrat';
+color: black;
+padding: 30px;
+display: inline-block;
+}
+
+.text-descript p:first-child{
+font-weight: 800;
+}
+
+.foto-destacada img{
+width: 100%;
+padding: 0;	
+}
+
+
+.masonry { /* Masonry container */
+-webkit-column-count: 2;
+-moz-column-count:2;
+column-count: 2;
+-webkit-column-gap: 1em;
+-moz-column-gap: 1em;
+column-gap: 1em;
+padding: 0;
+-moz-column-gap: 1.5em;
+-webkit-column-gap: 1.5em;
+column-gap: 1.5em;
+font-size: .1em;
+padding-top: 3px;
+}
+
+.item {
+display: inline-block;
+width: 100%;
+-webkit-transition:1s ease all;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+
+.item img {
+height: auto;
+}
+
+.footer__info{
+text-align: left;
+font-size: 12px;
+text-decoration: none;
+list-style: none;
+font-family: 'Montserrat';
+font-weight: 500;
+line-height: 20px;
+}
+
+
+.footer__info a{
+color: #333;
+}
+
+.mi-nombre2{
+font-weight: 800;
+font-family: 'Montserrat';
+text-align: left;
+padding-bottom: 8px;
+font-size: 12px;
+}
+
+.bajada{
+font-weight: 500;
+font-family: 'Montserrat';
+text-align: left;
+font-size: 12px;
+}
+
+.page-footer{
+background-color: #fff;
+z-index: 2;
+padding-bottom: 20px;
+/* position:relative; */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+.titulo-proyecto{
+text-align: center;
+font-family: 'Montserrat';
+font-weight: 800;
+line-height: 20px;
+padding-top: 80px;
+text-transform: uppercase;
+}
+
+
+.cliente-proyecto{
+text-align: center;
+font-family: 'Montserrat';
+font-weight: 600;
+padding-top: 20px;
+color: #636363;
+
+}
+
+
+.parrafo-proyecto{
+text-align: center;
+font-family: 'Montserrat';
+font-weight: 300;
+line-height: 20px;
+padding: 20px 80px 30px 80px;
+font-size: 14px;
+color: #636363;
+}
+
+.aboutme{
+background-color: #656786;
+background-size: cover;
+text-align: left;
+font-family: 'Montserrat';
+padding: 0;
+}
+
+
+.aboutme__textos{
+padding: 100px;
+background-color: #656786;
+}
+
+.aboutme__text{
+color: #e68383;
+font-weight: 800;
+font-size: 10em;
+line-height: 0.8;
+}
+
+.aboutme__text2{
+color: #d2d5ff4d;
+text-align: left;
+font-family: 'Montserrat';
+font-weight: 400;
+padding-top: 60px;
+font-size: 6em;
+line-height: 1;
+}
+
+.aboutme__text3{
+color: #e7e7e7;
+text-align: left;
+font-family: 'Montserrat';
+font-weight: 200;
+padding-top: 60px;
+font-size: 1.6em;
+line-height: 1.4;
+}
+
+.aboutme__text4{
+color: #e68383;
+text-align: left;
+font-family: 'Montserrat';
+font-weight: 600;
+padding-top: 80px;
+font-size: 1.4em;
+}
+
+.aboutme__text5{
+color: #d2d5ff4d;
+text-align: left;
+font-family: 'Montserrat';
+font-weight: 600;
+padding-top: 10px;
+font-size: 1.2em;
+padding: 10px 0;  
+}
+
+.aboutme__ano{
+font-weight: 300;
+padding: 5px 0; 
+}
+
+.aboutme__que{
+font-weight: 600;
+padding: 3px 0; 
+}
+
+
+.aboutme__donde{
+padding-bottom: 50px;
+}
+
+
+.table > thead > tr > th, 
+.table > tbody > tr > th, 
+.table > tfoot > tr > th, 
+.table > thead > tr > td, 
+.table > tbody > tr > td, 
+.table > tfoot > tr > td{
+margin-top: 20px;
+padding: 20px;
+line-height: 1.42857143;
+vertical-align: top;
+border-top: 0.8px solid #333;
+}
+
+
+hr{
+border-top: 0.4px solid #424242;
+padding: 0 0 20px 0;
+margin: 0;
+}
+
+.contactme{
+background-color: #fbab09;
+padding: 200px;
+}
+
+
+.contactme__mail{
+text-align: left;
+font-family: 'Montserrat';
+font-weight: 600;
+color: #fff;
+padding-bottom: 5px;
+font-size: 30px;
+}
+
+
+.contactme__mail_2{
+text-align: left;
+font-family: 'Montserrat';
+font-weight: 400;
+color: #333;  
+padding-bottom: 300px;
+}
+
+
+
+
+.item img{max-width:100%;}
+
+
+@media only screen and (max-width: 320px) {
+.sidenav__info {
+padding-top: 85px;
+}
+
+main{
+	margin-bottom: 82px;
+}
+
+.masonry {
+-moz-column-count: 1;
+-webkit-column-count: 1;
+column-count: 1;
+}
+
+li.sidenav__infolist{
+display: none;
+}
+
+.sidenav{
+padding-right: 30px;
+}
+
+.sidenav nav{
+width: 100%;  
+}
+
+.aboutme__text{
+font-size: 7em;
+}
+
+.aboutme__text2{
+font-size: 3em;
+}
+
+.aboutme__text3{
+font-size: 1.2em;
+}
+
+.aboutme__textos{
+padding: 10px;
+font-size: 1em;
+}
+
+.contactme__mail{
+text-align: left;
+font-family: 'Montserrat';
+font-weight: 600;
+color: #fff;
+padding-bottom: 5px;
+font-size: 20px;
+}
+
+.table > thead > tr > th, 
+.table > tbody > tr > th, 
+.table > tfoot > tr > th, 
+.table > thead > tr > td, 
+.table > tbody > tr > td, 
+.table > tfoot > tr > td{
+margin-top: 20px;
+padding: 4px;
+}
+
+
+.footer__info{
+padding-top: 17px;	
+}
+}
+
+
+@media only screen and (min-width: 321px) {
+
+.sidenav__info {
+padding-top: 85px;
+padding-bottom: 20px;
+
+}
+
+main{
+	margin-bottom: 120px;
+}
+
+.masonry {
+-moz-column-count: 1;
+-webkit-column-count: 1;
+column-count: 1;
+}
+
+li.sidenav__infolist{
+display: none;
+}
+
+.sidenav{
+padding-right: 30px;
+}
+
+.sidenav nav{
+width: 100%;
+padding-right: 35px;
+}
+
+.aboutme__textos{
+padding: 20px;
+}
+
+.aboutme__text{
+color: #e68383;
+font-weight: 800;
+font-size: 7em;
+line-height: 0.8;
+}
+
+.aboutme__text2{
+padding-top: 40px;
+font-size: 3em;
+line-height: 1;
+}
+
+.aboutme__text3{
+font-size: 1.1em;
+line-height: 1.4;
+padding-top: 40px;
+}
+.contactme{
+background-color: #fbab09;
+padding: 60px 0 0 20px;
+}
+
+.contactme__mail{
+text-align: left;
+font-family: 'Montserrat';
+font-weight: 600;
+color: #fff;
+padding-bottom: 5px;
+font-size: 25px;
+}
+
+
+.table > thead > tr > th, 
+.table > tbody > tr > th, 
+.table > tfoot > tr > th, 
+.table > thead > tr > td, 
+.table > tbody > tr > td, 
+.table > tfoot > tr > td{
+margin-top: 20px;
+padding: 0px;
+}
+
+
+
+
+
+@media only screen and (min-width: 769px) {
+.sidenav{
+height: 100%;
+}
+.sidenav nav{
+width: auto;
+}
+
+main{
+	margin-bottom: 30px;
+}
+
+.masonry {
+-moz-column-count: 2;
+-webkit-column-count: 2;
+column-count: 2;
+}
+
+.sidenav__hamb{
+display: none;
+}
+.sidenav__info{
+font-size: 10px;
+padding-bottom: 85px;
+padding-bottom: 20px; 
+}
+
+.sidenav{
+padding-right: 28px;
+}
+
+li.sidenav__infolist{
+display: block;
+}
+
+.aboutme__textos{
+padding: 100px;
+}
+
+.aboutme__text{
+color: #e68383;
+font-weight: 800;
+font-size: 10em;
+line-height: 0.8;
+}
+
+.aboutme__text2{
+padding-top: 60px;
+font-size: 6em;
+line-height: 1;
+}
+
+.aboutme__text3{
+padding-top: 60px;
+font-size: 1.6em;
+line-height: 1.4;
+}
+.contactme{
+background-color: #fbab09;
+padding: 150px;
+}
+
+.contactme__mail{
+font-size: 30px;
+}
+}
+
+
+
+
